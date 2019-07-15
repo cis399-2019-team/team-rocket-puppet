@@ -5,7 +5,6 @@ class sshd {
 	}
 	file { "/etc/ssh/sshd_config":
 		ensure  => present,
-		notify  => Service['sshd'],
 		mode    => '444',
 		owner   => 'root',
 		group   => 'root',
