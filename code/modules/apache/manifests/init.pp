@@ -1,7 +1,6 @@
-class apache2 {
+class apache {
 	package { "apache2":
 		ensure   => installed,
-		provider => apt,
 	}
 	file {"/etc/apache2/apache2.conf":
 		ensure  => present,
