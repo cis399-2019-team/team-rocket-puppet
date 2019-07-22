@@ -15,7 +15,6 @@ class apache2 {
 		enable => true,
 		ensure => running, 
 		subscribe => File["/etc/apache2/apache2.conf"],
-		require   => [ Package["apache2"], ],
 	}
 
 }
