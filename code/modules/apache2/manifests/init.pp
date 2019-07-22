@@ -8,7 +8,7 @@ class apache2 {
 		mode    => '444',
 		owner   => 'root', 
 		group   => 'root', 
-		source  => "puppet:///modules/apache2/apache2.conf",
+		source  => "puppet:///modules/apache2/files/apache2.conf",
 		require => Package["apache2"],
 	}
 
@@ -18,7 +18,7 @@ class apache2 {
 		mode	=>	'444',
 		owner	=>	'root',
 		group	=>	'root',
-		source	=>	"puppet:///modules/apache2/html",
+		source	=>	"puppet:///modules/apache2/files/html",
 		require	=>	Package["apache2"],
 	}
 	service { "apache2":
