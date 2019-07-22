@@ -1,4 +1,4 @@
-class apache {
+class apache2 {
 	package { "apache2":
 		ensure   => installed,
 		provider => apt,
@@ -11,7 +11,7 @@ class apache {
 		source  => "puppet:///modules/apache/apache2.conf",
 		require => Package["apache2"],
 	}
-	service { "apache":
+	service { "apache2":
 		enable => true,
 		ensure => running, 
 		subscribe => File["/etc/apache2/apache2.conf"],
