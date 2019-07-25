@@ -8,55 +8,55 @@ class user {
 
 	user{"jerry":
 	ensure	=> present,
-	home	=> "/home/stevev",
+	home	=> "/home/jerry",
 	managehome	=> true
 	}
 
 	user{"mapu":
 	ensure	=> present,
-	home	=> "/home/stevev",
+	home	=> "/home/mapu",
 	managehome	=> true
 	}
 
 	user{"keir":
 	ensure	=> present,
-	home	=> "/home/stevev",
+	home	=> "/home/keir",
 	managehome	=> true
 	}
 
 	user{"henzi":
 	ensure	=> present,
-	home	=> "/home/stevev",
+	home	=> "/home/henzi",
 	managehome	=> true
 	}
 
 	user{"austin":
 	ensure	=> present,
-	home	=> "/home/stevev",
+	home	=> "/home/austin",
 	managehome	=> true
 	}
 
 	user{"rico":
 	ensure	=> present,
-	home	=> "/home/stevev",
+	home	=> "/home/rico",
 	managehome	=> true
 	}
 
 	user{"kylie":
 	ensure	=> present,
-	home	=> "/home/stevev",
+	home	=> "/home/kylie",
 	managehome	=> true
 	}
 
 	user{"devin":
 	ensure	=> present,
-	home	=> "/home/stevev",
+	home	=> "/home/devin",
 	managehome	=> true
 	}
 
 	user{"lucas":
 	ensure	=> present,
-	home	=> "/home/stevev",
+	home	=> "/home/lucas",
 	managehome	=> true
 	}
 
