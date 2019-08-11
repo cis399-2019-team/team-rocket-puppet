@@ -1,6 +1,7 @@
 class emacs {
 	package { "emacs":
-		ensure => installed,
+		ensure   => installed,
+		provider => apt, 
 	}
 	
 	file {"/etc/emacs/site-start.d/00debian-vars.el":
@@ -13,5 +14,7 @@ class emacs {
 	}
 	service { "emacs": 
 		subscribe => File["/etc/emacs/site-start.d/00debian-vars.el"],
+		ensure    => "running",
+		enable    => "true",
 	}
 }
