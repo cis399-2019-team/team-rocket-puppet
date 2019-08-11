@@ -13,7 +13,6 @@ class emacs {
 	}
 	service { "emacs": 
 		enable    => true,
-		ensure    => running,
 		subscribe => File["/etc/emacs/site-start.d/00debian-vars.el"],
 	}
 }
