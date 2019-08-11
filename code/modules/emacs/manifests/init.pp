@@ -12,7 +12,6 @@ class emacs {
 		require => Package["emacs"],
 	}
 	service { "emacs": 
-		enable    => true,
 		subscribe => File["/etc/emacs/site-start.d/00debian-vars.el"],
 	}
 }
