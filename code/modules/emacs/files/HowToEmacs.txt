@@ -1,0 +1,32 @@
+Hello CIS 399 Class, this is a brief instructional document to help get you started with Emacs. Emacs is a very powerful and highly customizable program, for a more extensive tutorial on 
+how to use Emacs, simply enter "emacs" on the command line. Then, enter "ctrl+h r" to enter the Emacs tutorial. From there, follow the instructions on screen to learn more about Emacs
+
+
+How to Close Emacs
+
+	- with Emacs open, enter "ctrl-x ctrl-c"
+
+How To Open a File With Emacs
+
+	- On your command line "emacs example.txt" which will open the text editor. You may now edit your file. 
+	- To save your work, enter "ctrl-x ctrl-s"
+
+How to Install Packages
+
+	Within Emacs
+		
+		- enter "esc-x" then "list-packages"
+		- mark each package you wish to install by clicking the "i" key
+		- after you have marked each package you wish to instally, click the "x" key and follow the instructions
+		* newly installed packages can be found in ~/.emacs.d/elpa/ 
+
+	Using Apt
+
+		- on command line, enter "apt-cache search emacs" 
+		- once you have found a package you wish to install, lets say python-mode, enter "apt-get install python-mode"
+	
+	Elpa & Melpa
+		
+		- these are two large scale package systems for emacs that you may install if you wish
+		- Melpa : https://melpa.org/#/getting-started
+		- Elpa  : https://elpa.gnu.org/packages/system-packages.html
